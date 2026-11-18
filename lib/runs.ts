@@ -50,7 +50,8 @@ export function magentoVersion(jobName: string): string | null {
   return VERSION_IN_JOB.exec(jobName)?.[1] ?? null;
 }
 
-const SEVERITY: Record<Conclusion, number> = { success: 0, skipped: 1, cancelled: 2, failure: 3 };
+// A skipped job (e.g. phpstan with no config) ranks lowest, so it never hides jobs that ran.
+const SEVERITY: Record<Conclusion, number> = { skipped: 0, success: 1, cancelled: 2, failure: 3 };
 
 /** Worst conclusion per Magento version among the run's jobs that name one. */
 export function byVersion(run: Run): Map<string, Conclusion> {

@@ -41,3 +41,22 @@ test("parseRuns rejects unknown conclusions and missing fields", () => {
   assert.throws(() => parseRuns(JSON.stringify([{ ...sample[0], repo: "" }])), /missing a repo/);
   assert.throws(() => parseRuns("{}"), /array/);
 });
+
+test("byVersion lets jobs that ran outrank a skipped one", () => {
+  const run = {
+    ...sample[0],
+    jobs: [
+      { name: "check-store (magento/project-community-edition:2.4.9) / phpstan", conclusion: "skipped" },
+      { name: "check-store (magento/project-community-edition:2.4.9) / smoke-test (magento/project-community-edition:2.4.9)", conclusion: "success" },
+      { name: "check-store (magento/project-community-edition:2.4.8-p5) / phpstan", conclusion: "skipped" },
+    ],
+  };
+
+  const [parsed] = parseRuns(JSON.stringify([run]));
+
+  assert.ok(parsed);
+  assert.deepEqual([...byVersion(parsed)], [
+    ["2.4.9", "success"],
+    ["2.4.8-p5", "skipped"],
+  ]);
+});
