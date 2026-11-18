@@ -21,6 +21,8 @@ const WORKFLOWS = [
 ];
 
 const DIFF = `# fix-magento-install/action.yml (the same two steps go in integration.yaml's copy of the fixups)
++    # Composer 2.9+ blocks league/flysystem 2.x (PKSA-w9tt-7782-78jx), which 2.4.7 requires. Remove both
++    # steps once thephpleague/flysystem#1925 ships a patched 2.x or 2.4.7 leaves the supported matrix.
 +    - name: Check if this version of composer blocks insecure packages
 +      uses: graycoreio/github-actions-magento2/semver-compare@main
 +      id: is-composer-blocking-insecure
@@ -34,7 +36,7 @@ const DIFF = `# fix-magento-install/action.yml (the same two steps go in integra
 +        composer config --no-interaction --merge --json audit.ignore \\
 +          '{"PKSA-w9tt-7782-78jx": {"apply": "block", "reason": "No patched league/flysystem 2.x: https://github.com/thephpleague/flysystem/issues/1925"}}'
 +      shell: bash
-+      name: Fixup league/flysystem advisory blocking install (…/issues/346)
++      name: Fixup league/flysystem advisory blocking install
 +      working-directory: \${{ inputs.magento_directory }}
 +      if: |
 +        startsWith(steps.init-magento-get-magento-version.outputs.version, '"2.4.7')
@@ -98,6 +100,7 @@ export default function Page() {
 
   return (
     <main className="mx-auto max-w-5xl px-5 py-12 sm:px-8 sm:py-16">
+      <div aria-hidden="true" className="hero-glow" />
       <p className="text-sm font-semibold tracking-wide text-ink uppercase">
         github-actions-magento2 · issue #346 · unofficial demo
       </p>
@@ -158,7 +161,7 @@ export default function Page() {
       </Section>
 
       <Section title="The change">
-        <pre className="overflow-x-auto rounded-lg bg-ink p-4 font-mono text-sm leading-relaxed text-white">{DIFF}</pre>
+        <pre className="rounded-lg bg-ink p-4 font-mono text-sm leading-relaxed break-all whitespace-pre-wrap text-white">{DIFF}</pre>
         <ul className="list-disc space-y-2 pl-6">
           <li>
             <strong>Only the disposable project.</strong> It writes to the Magento project the action creates for testing, the
