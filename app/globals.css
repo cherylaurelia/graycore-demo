@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* Colors from graycore.io's stylesheet: near-black ink, light grey canvas, indigo-to-teal accent. */
+@theme {
+  --color-bg: #f3f3f3;
+  --color-card: #ffffff;
+  --color-ink: #070707;
+  --color-muted: #4a4a4a;
+  --color-line: #d3d3d3;
+  --color-indigo: #090c9b;
+  --color-teal: #60e1e0;
+  --color-fail: #b42318;
+  --color-pass: #067647;
+  --color-skip: #6b6b6b;
+  --font-sans: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+.accent-text {
+  background: linear-gradient(90deg, var(--color-indigo), #5b4fd6 45%, #3fb8c9 80%, var(--color-teal));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

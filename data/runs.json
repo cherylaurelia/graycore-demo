@@ -1,0 +1,634 @@
+[
+  {
+    "key": "main-check-extension",
+    "repo": "graycoreio/github-actions-magento2",
+    "runId": 39268531485,
+    "workflow": "Check Extension Test",
+    "branch": "main",
+    "createdAt": "2026-10-19T14:23:37Z",
+    "jobs": [
+      {
+        "name": "compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / compute_resolved",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / compute_latest_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / coding-standard (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / phpstan (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "cancelled"
+      },
+      {
+        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.9)",
+        "conclusion": "cancelled"
+      },
+      {
+        "name": "check-workflow / unit-test-extension (magento/project-community-edition:2.4.9)",
+        "conclusion": "cancelled"
+      },
+      {
+        "name": "check-workflow / unit-test-extension (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "cancelled"
+      },
+      {
+        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.9)",
+        "conclusion": "cancelled"
+      },
+      {
+        "name": "check-workflow / unit-test-extension (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "cancelled"
+      },
+      {
+        "name": "check-workflow / Check Extension Success",
+        "conclusion": "failure"
+      }
+    ]
+  },
+  {
+    "key": "main-setup",
+    "repo": "graycoreio/github-actions-magento2",
+    "runId": 39268531995,
+    "workflow": "Setup Magento Test",
+    "branch": "main",
+    "createdAt": "2026-10-19T14:23:37Z",
+    "jobs": [
+      {
+        "name": "compute_matrix_latest",
+        "conclusion": "success"
+      },
+      {
+        "name": "compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "setup-magento-extension (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
+        "name": "setup-magento-store (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "setup-magento-store (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "setup-magento-store (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      }
+    ]
+  },
+  {
+    "key": "main-integration",
+    "repo": "graycoreio/github-actions-magento2",
+    "runId": 39268531939,
+    "workflow": "Integration Test",
+    "branch": "main",
+    "createdAt": "2026-10-19T14:23:37Z",
+    "jobs": [
+      {
+        "name": "compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "integration-workflow / integration_test (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "integration-workflow / integration_test (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "integration-workflow / integration_test (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      }
+    ]
+  },
+  {
+    "key": "main-check-store",
+    "repo": "graycoreio/github-actions-magento2",
+    "runId": 39268532122,
+    "workflow": "Check Store Test",
+    "branch": "main",
+    "createdAt": "2026-10-19T14:23:37Z",
+    "jobs": [
+      {
+        "name": "compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "prepare-fixture (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "prepare-fixture (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "prepare-fixture (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store",
+        "conclusion": "skipped"
+      }
+    ]
+  },
+  {
+    "key": "fix-check-extension",
+    "repo": "cherylaurelia/github-actions-magento2",
+    "runId": 44359247027,
+    "workflow": "Check Extension Test",
+    "branch": "ci-proof-flysystem-247",
+    "createdAt": "2026-11-18T17:29:28Z",
+    "jobs": [
+      {
+        "name": "compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / compute_resolved",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / compute_latest_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / unit-test-extension (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / unit-test-extension (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / unit-test-extension (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / coding-standard (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / phpstan (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / Check Extension Success",
+        "conclusion": "success"
+      }
+    ]
+  },
+  {
+    "key": "fix-setup",
+    "repo": "cherylaurelia/github-actions-magento2",
+    "runId": 44359234542,
+    "workflow": "Setup Magento Test",
+    "branch": "ci-proof-flysystem-247",
+    "createdAt": "2026-11-18T17:29:24Z",
+    "jobs": [
+      {
+        "name": "compute_matrix_latest",
+        "conclusion": "success"
+      },
+      {
+        "name": "compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "setup-magento-extension (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
+        "name": "setup-magento-store (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "setup-magento-store (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "setup-magento-store (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      }
+    ]
+  },
+  {
+    "key": "fix-integration",
+    "repo": "cherylaurelia/github-actions-magento2",
+    "runId": 44359241155,
+    "workflow": "Integration Test",
+    "branch": "ci-proof-flysystem-247",
+    "createdAt": "2026-11-18T17:29:26Z",
+    "jobs": [
+      {
+        "name": "compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "integration-workflow / integration_test (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "integration-workflow / integration_test (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "integration-workflow / integration_test (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      }
+    ]
+  },
+  {
+    "key": "fix-check-store",
+    "repo": "cherylaurelia/github-actions-magento2",
+    "runId": 44359254816,
+    "workflow": "Check Store Test",
+    "branch": "ci-proof-flysystem-247",
+    "createdAt": "2026-11-18T17:29:31Z",
+    "jobs": [
+      {
+        "name": "compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "prepare-fixture (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "prepare-fixture (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "prepare-fixture (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.9) / compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.7-p10) / compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.8-p5) / compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.9) / unit-test (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.9) / coding-standard (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.9) / smoke-test (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.9) / phpstan",
+        "conclusion": "skipped"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.8-p5) / unit-test (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.8-p5) / coding-standard (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.8-p5) / smoke-test (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.8-p5) / phpstan",
+        "conclusion": "skipped"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.7-p10) / coding-standard (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.7-p10) / smoke-test (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.7-p10) / unit-test (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.7-p10) / phpstan",
+        "conclusion": "skipped"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.8-p5) / Check Store Success",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.7-p10) / Check Store Success",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-store (magento/project-community-edition:2.4.9) / Check Store Success",
+        "conclusion": "success"
+      }
+    ]
+  },
+  {
+    "key": "control-setup",
+    "repo": "cherylaurelia/github-actions-magento2",
+    "runId": 44356761653,
+    "workflow": "Setup Magento Test",
+    "branch": "ci-control-flysystem-247",
+    "createdAt": "2026-11-18T17:16:13Z",
+    "jobs": [
+      {
+        "name": "compute_matrix_latest",
+        "conclusion": "success"
+      },
+      {
+        "name": "compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "setup-magento-extension (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
+        "name": "setup-magento-store (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "setup-magento-store (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "setup-magento-store (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      }
+    ]
+  },
+  {
+    "key": "control-check-extension",
+    "repo": "cherylaurelia/github-actions-magento2",
+    "runId": 44356767760,
+    "workflow": "Check Extension Test",
+    "branch": "ci-control-flysystem-247",
+    "createdAt": "2026-11-18T17:16:14Z",
+    "jobs": [
+      {
+        "name": "compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / compute_latest_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / compute_resolved",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "cancelled"
+      },
+      {
+        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "check-workflow / unit-test-extension (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "cancelled"
+      },
+      {
+        "name": "check-workflow / unit-test-extension (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.9)",
+        "conclusion": "cancelled"
+      },
+      {
+        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.9)",
+        "conclusion": "cancelled"
+      },
+      {
+        "name": "check-workflow / unit-test-extension (magento/project-community-edition:2.4.9)",
+        "conclusion": "cancelled"
+      },
+      {
+        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "cancelled"
+      },
+      {
+        "name": "check-workflow / coding-standard (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / phpstan (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / Check Extension Success",
+        "conclusion": "failure"
+      }
+    ]
+  },
+  {
+    "key": "cors-before",
+    "repo": "graycoreio/magento2-cors",
+    "runId": 42814251616,
+    "workflow": "Check Extension",
+    "branch": "master",
+    "createdAt": "2026-11-10T12:15:50Z",
+    "jobs": [
+      {
+        "name": "compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / compute_resolved",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / compute_latest_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / coding-standard (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / unit-test-extension (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / integration_test (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / compile-extension (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / unit-test-extension (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / compile-extension (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / compile-extension (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "check-extension / integration_test (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / unit-test-extension (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "check-extension / integration_test (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "failure"
+      },
+      {
+        "name": "check-extension / phpstan",
+        "conclusion": "skipped"
+      },
+      {
+        "name": "check-extension / Check Extension Success",
+        "conclusion": "failure"
+      }
+    ]
+  },
+  {
+    "key": "cors-after",
+    "repo": "cherylaurelia/magento2-cors",
+    "runId": 44359262856,
+    "workflow": "Check Extension",
+    "branch": "ci-proof-flysystem-247",
+    "createdAt": "2026-11-18T17:29:34Z",
+    "jobs": [
+      {
+        "name": "compute_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / compute_resolved",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / compute_latest_matrix",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / coding-standard (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / integration_test (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / integration_test (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / integration_test (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / compile-extension (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / unit-test-extension (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / unit-test-extension (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / compile-extension (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / unit-test-extension (magento/project-community-edition:2.4.7-p10)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / compile-extension (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-extension / phpstan",
+        "conclusion": "skipped"
+      },
+      {
+        "name": "check-extension / Check Extension Success",
+        "conclusion": "success"
+      }
+    ]
+  }
+]
