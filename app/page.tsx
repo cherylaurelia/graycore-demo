@@ -20,7 +20,7 @@ const WORKFLOWS = [
   { label: "Check Store Test", before: "main-check-store", after: "fix-check-store" },
 ];
 
-const DIFF = `# fix-magento-install/action.yml (the same two steps go in integration.yaml's copy of the fixups)
+const DIFF = `# fix-magento-install/action.yml (integration.yaml's copy of the fixups gets the same check)
 +    # Composer 2.9+ blocks league/flysystem 2.x (PKSA-w9tt-7782-78jx), which 2.4.7 requires. Remove both
 +    # steps once thephpleague/flysystem#1925 ships a patched 2.x or 2.4.7 leaves the supported matrix.
 +    - name: Check if this version of composer blocks insecure packages
@@ -109,8 +109,11 @@ export default function Page() {
       </h1>
       <p className="mt-6 max-w-3xl text-xl leading-relaxed">
         <strong>Problem:</strong> Composer 2.9 blocks every league/flysystem 2.x release (advisory PKSA-w9tt-7782-78jx), and
-        no patched 2.x exists, so composer can&apos;t resolve Magento 2.4.7-p10 and every 2.4.7 job fails, including
-        main&apos;s own CI since October 19.
+        no patched 2.x exists, so composer can&apos;t resolve Magento 2.4.7-p10 and every 2.4.7 job fails (
+        <a className="underline" href="https://github.com/graycoreio/github-actions-magento2/actions/runs/39268531485">
+          main&apos;s CI run, October 19
+        </a>
+        ).
       </p>
       <p className="mt-3 max-w-3xl text-xl leading-relaxed">
         <strong>Fix:</strong> one step skips blocking for that one advisory on 2.4.7 only. <code>composer audit</code> still
