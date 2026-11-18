@@ -6,8 +6,7 @@ const runs = parseRuns(readFileSync(join(process.cwd(), "data/runs.json"), "utf8
 
 const ISSUE_URL = "https://github.com/graycoreio/github-actions-magento2/issues/346";
 
-const BRANCH_URL =
-  "https://github.com/graycoreio/github-actions-magento2/compare/main...cherylaurelia:github-actions-magento2:fix/flysystem-advisory-247";
+const PR_URL = "https://github.com/graycoreio/github-actions-magento2/pull/348";
 
 const UPSTREAM_ISSUE_URL = "https://github.com/thephpleague/flysystem/issues/1925";
 const DEMO_REPO_URL = "https://github.com/cherylaurelia/graycore-demo";
@@ -120,8 +119,8 @@ export default function Page() {
         reports it, and every other advisory still blocks.
       </p>
       <div className="mt-8 flex flex-wrap gap-3">
-        <a className="rounded-md bg-ink px-5 py-3 font-medium text-white" href={BRANCH_URL}>
-          See the fix (fork branch)
+        <a className="rounded-md bg-ink px-5 py-3 font-medium text-white" href={PR_URL}>
+          See the PR (#348)
         </a>
         <a className="rounded-md border border-line bg-card px-5 py-3 font-medium" href={ISSUE_URL}>
           Issue #346
