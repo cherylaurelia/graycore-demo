@@ -162,17 +162,13 @@
   {
     "key": "fix-check-extension",
     "repo": "cherylaurelia/github-actions-magento2",
-    "runId": 44364269696,
+    "runId": 44369260505,
     "workflow": "Check Extension Test",
     "branch": "ci-proof-flysystem-247",
-    "createdAt": "2026-11-18T17:56:54Z",
+    "createdAt": "2026-11-18T18:23:53Z",
     "jobs": [
       {
         "name": "compute_matrix",
-        "conclusion": "success"
-      },
-      {
-        "name": "check-workflow / compute_resolved",
         "conclusion": "success"
       },
       {
@@ -180,31 +176,19 @@
         "conclusion": "success"
       },
       {
+        "name": "check-workflow / compute_resolved",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / coding-standard (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / phpstan (magento/project-community-edition)",
+        "conclusion": "success"
+      },
+      {
         "name": "check-workflow / unit-test-extension (magento/project-community-edition:2.4.7-p10)",
-        "conclusion": "success"
-      },
-      {
-        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.7-p10)",
-        "conclusion": "success"
-      },
-      {
-        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.8-p5)",
-        "conclusion": "success"
-      },
-      {
-        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.7-p10)",
-        "conclusion": "success"
-      },
-      {
-        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.9)",
-        "conclusion": "success"
-      },
-      {
-        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.8-p5)",
-        "conclusion": "success"
-      },
-      {
-        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.9)",
         "conclusion": "success"
       },
       {
@@ -216,11 +200,27 @@
         "conclusion": "success"
       },
       {
-        "name": "check-workflow / phpstan (magento/project-community-edition)",
+        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.7-p10)",
         "conclusion": "success"
       },
       {
-        "name": "check-workflow / coding-standard (magento/project-community-edition)",
+        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.8-p5)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / compile-extension (magento/project-community-edition:2.4.9)",
+        "conclusion": "success"
+      },
+      {
+        "name": "check-workflow / integration_test (magento/project-community-edition:2.4.7-p10)",
         "conclusion": "success"
       },
       {
@@ -266,21 +266,21 @@
   {
     "key": "fix-integration",
     "repo": "cherylaurelia/github-actions-magento2",
-    "runId": 44364263908,
+    "runId": 44369341681,
     "workflow": "Integration Test",
     "branch": "ci-proof-flysystem-247",
-    "createdAt": "2026-11-18T17:56:52Z",
+    "createdAt": "2026-11-18T18:24:19Z",
     "jobs": [
       {
         "name": "compute_matrix",
         "conclusion": "success"
       },
       {
-        "name": "integration-workflow / integration_test (magento/project-community-edition:2.4.9)",
+        "name": "integration-workflow / integration_test (magento/project-community-edition:2.4.7-p10)",
         "conclusion": "success"
       },
       {
-        "name": "integration-workflow / integration_test (magento/project-community-edition:2.4.7-p10)",
+        "name": "integration-workflow / integration_test (magento/project-community-edition:2.4.9)",
         "conclusion": "success"
       },
       {
